@@ -36,6 +36,7 @@ class Truck extends Vehicle implements AbleToTow {
 
     super();
     // TODO: The constructor should initialize the properties of the     this.vin = vin;
+    this.vin = vin;
     this.color = color;
     this.make = make;
     this.model = model;
