@@ -60,21 +60,21 @@ class Truck extends Vehicle implements AbleToTow {
       return;
     }
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
-    if (this.weight >= this.towingCapacity) {
-      // TODO: If it is, log that the vehicle is being towed
+    if (this.weight <= this.towingCapacity) {
+      // If it is, log that the vehicle is being towed
       console.log(`Vehicle is being towed`);
-      // TODO: If it is not, log that the vehicle is too heavy to be towed
+      // If it is not, log that the vehicle is too heavy to be towed
     } else {
       console.log(`Vehicle is too heavy to be towed`);
     }
   }
 
-  // TODO: Override the printDetails method from the Vehicle class
-  // TODO: The method should call the printDetails method of the parent class
+  // Override the printDetails method from the Vehicle class
+  // The method should call the printDetails method of the parent class
   override printDetails(): void {
-    // TODO: The method should log the details of the Truck
+    // The method should log the details of the Truck
     super.printDetails();
-    // TODO: The details should include the VIN, make, model, year, weight, top speed, color, towing capacity, and wheels
+    // The details should include the VIN, make, model, year, weight, top speed, color, towing capacity, and wheels
     console.log(`VIN: ${this.vin}`);
     console.log(`Color: ${this.color}`);
     console.log(`Make: ${this.make}`);
