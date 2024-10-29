@@ -51,21 +51,21 @@ class Truck extends Vehicle implements AbleToTow {
     }
   }
 
-    // Implement the tow method from the AbleToTow interface
+  // Implement the tow method from the AbleToTow interface
   tow(vehicle: Truck | Motorbike | Car): void {
 
-      // Get the make and model of the vehicle if it exists
-      // Check if the vehicle's weight is less than or equal to the truck's towing capacity
-      // If it is, log that the vehicle is being towed
-      // If it is not, log that the vehicle is too heavy to be towed
-      if(vehicle.make && vehicle.model) {
-    if (vehicle.weight <= this.towingCapacity) {
-      console.log(`${vehicle.make} ${vehicle.model} is being towed!`);
-    } else {
-      console.log(`${vehicle.make} ${vehicle.model} is too heavy to be towed!`);
+    // Get the make and model of the vehicle if it exists
+    // Check if the vehicle's weight is less than or equal to the truck's towing capacity
+    // If it is, log that the vehicle is being towed
+    // If it is not, log that the vehicle is too heavy to be towed
+    if (vehicle.make && vehicle.model) {
+      if (vehicle.weight <= this.towingCapacity) {
+        console.log(`${vehicle.make} ${vehicle.model} is being towed!`);
+      } else {
+        console.log(`${vehicle.make} ${vehicle.model} is too heavy to be towed!`);
+      }
     }
   }
-}  
 
   // Override the printDetails method from the Vehicle class
   // The method should call the printDetails method of the parent class
@@ -86,6 +86,12 @@ class Truck extends Vehicle implements AbleToTow {
     );
     console.log(
       `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
     );
   }
 }
