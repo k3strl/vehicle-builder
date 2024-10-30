@@ -174,7 +174,7 @@ class Cli {
       ])
       .then((answers) => {
         //  Use the answers object to pass the required properties to the Truck constructor
-        const truck = new Truck (
+        const truck = new Truck(
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -251,7 +251,7 @@ class Cli {
       ])
       .then((answers) => {
         //  Use the answers object to pass the required properties to the Motorbike constructor
-        const motorbike = new Motorbike (
+        const motorbike = new Motorbike(
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -294,11 +294,11 @@ class Cli {
         if (answers.vehicleToTow.vin === truck.vin) {
           // If it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
           console.log('The truck cannot tow itself!');
-        } else { 
+        } else {
           truck.tow(answers.vehicleToTow);
         }
-          // If it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
-          
+        // If it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
+
         this.performActions();
       });
   }
