@@ -2,7 +2,7 @@
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
-  This is a small command-line application that builds vehicles including cars, trucks, and motorbikes, and allows the user to save data and perform various actions with them.
+  This is a small command-line application that builds vehicles and generates unique VINs for each. Start, stop, accelerate, decelerate, and even tow other vehicles if within towing capacity.
 
   ## Table of Contents
   - [Installation](#installation)
